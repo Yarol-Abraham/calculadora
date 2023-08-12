@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Helvetica';
+}
+
+body{
+    background: #F5F5F5;
+    letter-spacing: 0.1rem;
+}
+
+.header{
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem;
+    background: #0567ec;
+    color: #FFF;
+}
+
+.main{
+    width: 100%;
+    height: 66.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_calculadora
+{
+    border-radius: 1rem;
+    background: black;
+    width: 30rem;
+    height: 40rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0 0 1rem rgba(0, 0, 0, 0.521);
+}
+
+.contenedor_calculadora--1
+{
+    width: 100%;
+    height: 5rem;
+    background: #F5F5F5;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
+.contenedor_calculadora--2
+{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_calculadora--2__numeros
+{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 5.7rem);
+    grid-template-rows: repeat(4, 5.15rem);
+    gap: 1rem 1rem;
+}
+
+.contenedor_calculadora--2__numeros .caja_numero
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5a7b9c, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5a7b9c, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor_calculadora--2__numeros .caja_numero_red
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+
+    background: #d81504;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6b0303, #ff0000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6b0303, #ff0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contenedor_calculadora--2__resultado
+{
+    width: 99%;
+    height: 20%;
+    padding: 0.5rem 0;
+}
+
+.contenedor_calculadora--2__resultado .caja_numero_orange
+{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 3rem;
+    cursor: pointer;
+
+    background: #ad4200;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ad4200, #f17617);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ad4200, #f17617); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor_calculadora--1__respuesta {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
