@@ -17,18 +17,53 @@ body{
     letter-spacing: 0.1rem;
 }
 
+img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
 .header{
     width: 100%;
-    height: 5rem;
+    height: 7rem;
     padding: 1.5rem;
     background: #0567ec;
     color: #FFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header .header_user{
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header_user .header_user--image{
+ width: 30%;
+ height: 100%;
+ margin: 0 1rem;
+}
+
+.header_user .header_user--image img {
+    border-radius: 50%;
+}
+
+.header_user .header_user--username {
+    font-size: 1.2rem;
+}
+
+.header_login.header_login--hide {
+    display: none;
 }
 
 .main{
     width: 100%;
     height: 66.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
