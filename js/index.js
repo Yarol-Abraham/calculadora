@@ -106,4 +106,12 @@ function init()
     getUser();
 }
 
-init();
+
+
+function setup() {
+    init();
+}
+
+function draw() {
+    // put drawing code here
+}
